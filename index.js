@@ -201,7 +201,7 @@ const artists = [
     }
 ]
 
-console.log(parseInt(artists[0].years.split("-")))
+
 
 // 🖌🖼 M V P 🖼🖌 //
 
@@ -238,7 +238,7 @@ console.log(getArtistByIndex(artists, 0))
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who lived in the 20th century (1900-2000) */
 
-console.log(artists[0].years.split("-"));
+
 
 function get20s(array){
 
@@ -249,7 +249,7 @@ function get20s(array){
      
      
 
-    if (parseInt(array[i].years)>= 1900 && parseInt(array[i].years) <=2000){
+    if (parseInt(artists[i].years.split("-")[1])>= 1900) {
       artistsIn20th.push(array[i].name);
     } 
 
